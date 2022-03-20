@@ -47,6 +47,11 @@ body{
     font-weight: bold;
 }
 
+.jscard > .contentstitle{
+    margin-top: 0;
+    font-size: large;
+}
+
 .deck{
     margin: 50px auto;
     display: flex;
@@ -70,6 +75,30 @@ body{
     color: rgb(94, 97, 252);
 }
 
+.jscard{
+    width: 300px;
+    height: 150px;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addition{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    max-width: 70px;
+    max-height: 30px;
+    margin: 0px 5px;
+}
 a, a:active{
     text-decoration: none;
     color: black;
