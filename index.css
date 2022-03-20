@@ -65,6 +65,12 @@ body{
 }
 
 .card:hover{
-    background-color: rgb(173, 229, 255);
+    background-color: rgb(189, 233, 253);
     border-color: rgb(94, 97, 252);
+    color: rgb(94, 97, 252);
+}
+
+a, a:active{
+    text-decoration: none;
+    color: black;
 }
