@@ -87,6 +87,12 @@ body{
     align-items: center;
 }
 
+#capitalizeOutput{
+    max-width: 100px;
+    border-radius: 1px;
+    border-style: solid;
+}
+
 .addition{
     display: flex;
     flex-direction: row;

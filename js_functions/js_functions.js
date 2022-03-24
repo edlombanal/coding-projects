@@ -22,6 +22,13 @@ function multiply(one,two){
     };
 }
 
+function capitalize(word){
+    let str = word;
+    str = str.toLowerCase();
+    str = str.charAt(0).toUpperCase() + str.slice(1);
+    return str;
+}
+
 // Add seven to a number
 let numSeven = document.getElementById("addSevenInput");
 let outputAddSeven = document.getElementById("addSevenOutput");
@@ -41,5 +48,16 @@ multOne.addEventListener('input',()=>{
 multTwo.addEventListener('input',()=>{
     product = multiply(multOne.value,multTwo.value);
     multiplyOutput.textContent = product;
+})
+
+// Capitalize string
+let capStr = document.getElementById("targetString");
+let capitalizeOutput = document.getElementById("capitalizeOutput");
+capStr.addEventListener('input',()=>{
+    if(capStr.value != ""){
+        capitalizeOutput.textContent = capitalize(capStr.value);
+    } else{
+        capitalizeOutput.textContent = "";
+    }
 })
 
