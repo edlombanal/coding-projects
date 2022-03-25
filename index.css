@@ -27,11 +27,17 @@ body{
     align-items: center;
 }
 
+.contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .blockbox{
     display: flex;
     flex-direction: column;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 50px 5%;
     padding: 15px;
     gap: 15px;
     align-items: center;
@@ -54,8 +60,12 @@ body{
 
 .deck{
     margin: 50px auto;
+    width: auto;
     display: flex;
+    flex-direction: row;
     gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card{
@@ -88,9 +98,14 @@ body{
 }
 
 #capitalizeOutput{
-    max-width: 100px;
-    border-radius: 1px;
+    width: 70px;
+    height: 19px;
+    border-radius: 10px;
+    border-width: 3px;
     border-style: solid;
+    padding: 3px;
+    margin: 0px;
+    overflow: hidden;
 }
 
 .addition{

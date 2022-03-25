@@ -29,6 +29,12 @@ function capitalize(word){
     return str;
 }
 
+function lastChar(word){
+    let str = word;
+    str = str.slice(str.length-1);
+    return str;
+}
+
 // Add seven to a number
 let numSeven = document.getElementById("addSevenInput");
 let outputAddSeven = document.getElementById("addSevenOutput");
@@ -57,7 +63,18 @@ capStr.addEventListener('input',()=>{
     if(capStr.value != ""){
         capitalizeOutput.textContent = capitalize(capStr.value);
     } else{
-        capitalizeOutput.textContent = "";
+        capitalizeOutput.textContent = " ";
+    }
+})
+
+// Get last char
+let capStrChar = document.getElementById("targetStringChar");
+let lastCharOutput = document.getElementById("lastCharOutput");
+capStrChar.addEventListener('input',()=>{
+    if(capStrChar.value != ""){
+        lastCharOutput.textContent = lastChar(capStrChar.value);
+    } else{
+        lastCharOutput.textContent = " ";
     }
 })
 
