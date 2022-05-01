@@ -125,3 +125,18 @@ a, a:active{
     text-decoration: none;
     color: black;
 }
+
+button{
+    background-color: #3882f6;
+    padding: 7px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-style: solid;
+    border-radius: 15px;
+    border-color:#e5e7eb;
+    color: #e5e7eb;
+}
+
+button:hover{
+    background-color: cornflowerblue;
+}
